@@ -1,5 +1,7 @@
 # Connecting to Github
 
+This works for connecting over https. I have no idea what to do if you want to connect over ssh.
+
 ## Make a personal access token
 These instructions are accurate as of December 2, 2021.
 
@@ -9,7 +11,7 @@ These instructions are accurate as of December 2, 2021.
 4. Save the that token somewhere. 
 
 ## Storing the personal access token on the servers
-We need to store the personal access token on the servers. This is a great mystery. A great mystery indeed.
+We need to store the personal access token on the servers. This is a great mystery. A great mystery indeed.  I have mostly taken this info from [Some discussion on Stack Overflow](https://stackoverflow.com/questions/46645843/where-to-store-my-git-personal-access-token)
 
 1. Use the rstudio interface to log into a server.
 2.  Type the following:
@@ -36,7 +38,7 @@ This will probably say cache.  if so, type:
 git config --global credential.helper store
 ``` 
 
-You might also take this opportunity to do:
+You might be asked to put in your PAT here.  You might also take this opportunity to do:
 
 ```
 git config --global user.name <your_name>
@@ -74,5 +76,5 @@ If you want to use the ROracle library, you will need to put the .Renviron into 
 
 I have a very simple .Rprofile which sets up *network_location_remote* and *network_location_desktop* to be aware of places on the network.  If you want to use it, also put it in your home directory. 
 
-
+# Disclaimer type thing
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an "as is" basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
