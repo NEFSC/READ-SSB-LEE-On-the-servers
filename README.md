@@ -9,7 +9,7 @@ These instructions are accurate as of December 2, 2021.
 4. Save the that token somewhere. 
 
 ## Storing the personal access token on the servers
-We need to store the personal access token on the servers. This is a great mystery.
+We need to store the personal access token on the servers. This is a great mystery. A great mystery indeed.
 
 1. Use the rstudio interface to log into a server.
 2.  Type the following:
