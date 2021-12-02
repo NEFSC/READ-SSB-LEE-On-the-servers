@@ -21,7 +21,7 @@ credential_helper_get()
 git_credential_ask('https://github.com')
 ```
 
-The result of credential_helper_get() will probably say cache.  If it says "store" skep to step Y
+The result of credential_helper_get() will probably say cache.  If it says "store" skip to step 5.
 the result of git_credential_ask will might include your username and password.  It might include nothing.  
 
 3.  Open a terminal using Tools--> Terminal.  
@@ -65,5 +65,14 @@ to the end of your .Renviron file.
 Sys.setenv(GITHUB_PAT = "<YOUR_PAT_HERE>")
 ```
 To your .Rprofile 
+
+# Connecting to Oracle
+
+If you want to use the ROracle library, you will need to put the .Renviron into your home directory.  
+
+# Network drives
+
+I have a very simple .Rprofile which sets up *network_location_remote* and *network_location_desktop* to be aware of places on the network.  If you want to use it, also put it in your home directory. 
+
 
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an "as is" basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
