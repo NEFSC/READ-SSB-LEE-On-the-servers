@@ -10,6 +10,8 @@ These instructions are accurate as of December 2, 2021.
 3. Click Personal Access Tokens and generate a new token.  Give it all the permissions.
 4. Save the that token somewhere. 
 
+Note: If you have already created a repo you would like to access, you will need to use the corresponding token to gain access to your repo not a new one. 
+
 ## Storing the personal access token on the servers
 We need to store the personal access token on the servers. This is a great mystery. A great mystery indeed.  I have mostly taken this info from [Some discussion on Stack Overflow](https://stackoverflow.com/questions/46645843/where-to-store-my-git-personal-access-token)
 
