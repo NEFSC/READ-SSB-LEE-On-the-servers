@@ -40,7 +40,7 @@ This will probably say cache.  if so, type:
 git config --global credential.helper store
 ``` 
 
-You might be asked to put in your PAT here.  You might also take this opportunity to do:
+You might be asked to put in your PAT here.  This is probably your first time using git on the servers, so set your user.name and user.email:
 
 ```
 git config --global user.name <your_name>
@@ -52,7 +52,7 @@ The final line just shows you the settings, so you can make sure you set them pr
 
 4.  Restart R. (Session--> Restart R). Not sure if this is strictly necessary.
 
-5.  Try to clone something from github that is not public. This will prompt you for a username. Type in your username. It will prompt you for a password.  Type in your *Personal Access Token* from the previous section.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
+5.  Try to clone something from github that is not public. This may prompt you for a username. Type in your username. It will prompt you for a password.  Type in your *Personal Access Token* from the previous section.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
 
 If this doesn't work, try the following:
 
