@@ -6,8 +6,10 @@
 # and start a new session
 #
 
-network_location_desktop = "<the_ipaddress_to_the_network/>"
-network_location_remote = "//net/"
+network_location_desktop = "<the_ipaddress_to_the_network>"
+# This might work better 
+network_location_desktop = "blah.blah..noaa.gov"
+network_location_remote = "//net"
 
 # You might want to set your GITHUB PAT here, but only if other methods are not working
 # Sys.setenv(GITHUB_PAT = "YOUR PAT HERE")
