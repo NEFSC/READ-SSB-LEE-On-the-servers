@@ -1,3 +1,5 @@
+# Courtesy of Beth Josephson and Dave Hiltz
+
 ORACLE_HOME=/ora1/app/oracle/product/11.2.0/dbhome_1
 
 export ORACLE_HOME
