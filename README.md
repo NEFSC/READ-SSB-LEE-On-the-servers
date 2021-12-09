@@ -6,9 +6,9 @@ This works for connecting over https. I have no idea what to do if you want to c
 These instructions are accurate as of December 2, 2021.
 
 1. Sign into your github account.  In the top right, click the down arrow next to your profile pic and go down to settings.
-2.  On the right hand side, select developer settings.
+2. On the right hand side, select developer settings.
 3. Click Personal Access Tokens and generate a new token.  Give it all the permissions.
-4. Save the that token somewhere. 
+4. Copy and Paste the that token somewhere safe.  Don't lose it. 
 
 Note: If you have already created a repo you would like to access, you will need to use the corresponding token to gain access to your repo not a new one. 
 
@@ -20,6 +20,7 @@ We need to store the personal access token on the servers. This is a great myste
 
 
 ```
+install.package(credentials)
 library(credentials)
 credential_helper_get()
 git_credential_ask('https://github.com')
@@ -28,23 +29,23 @@ git_credential_ask('https://github.com')
 The result of credential_helper_get() will probably say cache.  If it says "store" skip to step 5.
 the result of git_credential_ask will might include your username and password.  It might include nothing.  
 
-3.  Open a terminal using Tools--> Terminal.  
+3.  Inside Rstudio, open a unix terminal using Tools--> Terminal.  
 type
 ```
 git config --list
 ```
 
-This will probably say cache.  if so, type:
+This will probably say cache.  If so, type:
 
 ```
 git config --global credential.helper store
 ``` 
 
-You might be asked to put in your PAT here.  This is probably your first time using git on the servers, so set your user.name and user.email:
+You might be asked to put in your Personal Access Token at this time. You might not.  This is probably your first time using git on the servers, you might as well set your user.name and user.email:
 
 ```
-git config --global user.name <your_name>
-git config --global user.email <your_email>
+git config --global user.name <your_github_user_name>
+git config --global user.email <your_email@noaa.gov>
 git config --list
 ```
 
@@ -52,23 +53,23 @@ The final line just shows you the settings, so you can make sure you set them pr
 
 4.  Restart R. (Session--> Restart R). Not sure if this is strictly necessary.
 
-5.  Try to clone something from github that is not public. This may prompt you for a username. Type in your username. It will prompt you for a password.  Type in your *Personal Access Token* from the previous section.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
+5.  Try to clone something from github that a private repository. You can do this by going to File--> New Project-->Version Control-->Git. This may prompt you for a username. Type in your username. It will prompt you for a password.  Type in your *Personal Access Token* from the previous section.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
 
 If this doesn't work, try the following:
 
-1. Try using *git_credential_update()* to update your password.
+1. Try using the R function *git_credential_update()* to update your password.
 
-2. Add 
+2. Try adding adding 
 ```
 GITHUB_PAT=<your_pat_here>
 ```
 to the end of your .Renviron file.
 
-3.  Add:
+3.  Try adding :
 ```
 Sys.setenv(GITHUB_PAT = "<YOUR_PAT_HERE>")
 ```
-To your .Rprofile 
+To your .Rprofile.  One of these three will work, but we're not exactly sure which.
 
 # Connecting to Oracle
 
