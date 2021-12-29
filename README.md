@@ -3,7 +3,7 @@
 This works for connecting over https. I have no idea what to do if you want to connect over ssh.
 
 ## Make a personal access token
-These instructions are accurate as of December 2, 2021.
+These instructions are accurate as of December 2, 2021 and work on the Neptune server.
 
 1. Sign into your github account.  In the top right, click the down arrow next to your profile pic and go down to settings.
 2. On the right hand side, select developer settings.
