@@ -1,4 +1,5 @@
 # Courtesy of Beth Josephson and Dave Hiltz
+# Min-Yang puts this in his root directory (/home2/mlee)
 
 ORACLE_HOME=/ora1/app/oracle/product/11.2.0/dbhome_1
 
