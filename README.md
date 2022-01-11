@@ -22,11 +22,8 @@ We need to store the personal access token on the servers. This is a great myste
 ```
 library(credentials)
 credential_helper_get()
-git_credential_ask('https://github.com')
 ```
-
 The result of credential_helper_get() will probably say cache.  If it says "store" skip to step 5.
-the result of git_credential_ask will might include your username and password.  It might include nothing.  
 
 3.  Inside Rstudio, open a unix terminal using Tools--> Terminal.  
 type
@@ -40,7 +37,7 @@ This will probably say cache.  If so, type:
 git config --global credential.helper store
 ``` 
 
-You might be asked to put in your Personal Access Token at this time. You might not.  This is probably your first time using git on the servers, you might as well set your user.name and user.email:
+You might be asked to put in your Personal Access Token at this time. You might not.  This is probably your first time using git on the servers, so take the chance to set  your user.name and user.email:
 
 ```
 git config --global user.name your_github_user_name
@@ -52,7 +49,14 @@ The final line just shows you the settings, so you can make sure you set them pr
 
 4.  Restart R. (Session--> Restart R). Not sure if this is strictly necessary.
 
-5.  Try to clone something from github that a private repository. You can do this by going to File--> New Project-->Version Control-->Git. This may prompt you for a username. Type in your username. It will prompt you for a password.  Type in your *Personal Access Token* from the previous section.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
+5.  Clone a private repository from github. You can do this by going to:
+    1.  File--> New Project-->Version Control-->Git.
+    2.  Copy and paste in the url of a private repository, give it a directory name, and fill in the directory where it should reside, and click okay. 
+    3.  At the username prompt, type in your username.
+    4.  ***At the password prompt, type in your Personal Access Token from the previous section***.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
+
+This process was tested and functional on Jan 11, 2022 on neptune.
+
 
 If this doesn't work, try the following:
 
