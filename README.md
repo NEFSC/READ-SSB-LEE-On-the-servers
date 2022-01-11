@@ -6,8 +6,8 @@ This works for connecting over https. I have no idea what to do if you want to c
 These instructions are accurate as of December 2, 2021 and work on the Neptune server.
 
 1. Sign into your github account.  In the top right, click the down arrow next to your profile pic and go down to settings.
-2. On the right hand side, select developer settings.
-3. Click Personal Access Tokens and generate a new token.  Give it all the permissions.
+2. On the left hand side, select developer settings.
+3. Click Personal Access Tokens and generate a new token.  Change the expiration to "No expiration". Give it all the permissions.  
 4. Copy and Paste the that token somewhere safe.  Don't lose it. 
 
 Note: If you have already created a repo you would like to access, you will need to use the corresponding token to gain access to your repo not a new one. 
