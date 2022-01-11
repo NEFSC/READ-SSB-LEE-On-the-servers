@@ -43,8 +43,8 @@ git config --global credential.helper store
 You might be asked to put in your Personal Access Token at this time. You might not.  This is probably your first time using git on the servers, you might as well set your user.name and user.email:
 
 ```
-git config --global user.name <your_github_user_name>
-git config --global user.email <your_email@noaa.gov>
+git config --global user.name your_github_user_name
+git config --global user.email your_email@noaa.gov
 git config --list
 ```
 
