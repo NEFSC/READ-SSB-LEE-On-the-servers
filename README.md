@@ -20,7 +20,6 @@ We need to store the personal access token on the servers. This is a great myste
 
 
 ```
-install.package(credentials)
 library(credentials)
 credential_helper_get()
 git_credential_ask('https://github.com')
