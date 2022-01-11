@@ -1,5 +1,5 @@
 # .Rprofile -- commands to execute at the beginning of each R session
-#
+# Min-Yang puts this in his home directory (/home2/mlee)
 # You can use this file to load packages, set options, etc.
 #
 # NOTE: changes in this file won't be reflected until after you quit
