@@ -1,3 +1,5 @@
+This repository contains information to get github working with Rstudio on the NEFSC servers. It is a bit of a pain; more pain than necessary if you are working on a normal computer.
+
 # Connecting to Github
 
 This works for connecting over https. I have no idea what to do if you want to connect over ssh.
