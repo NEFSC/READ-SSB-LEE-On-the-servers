@@ -9,8 +9,10 @@ These instructions are functional as of on Jan 11, 2022 and workson the Neptune 
 
 1. Sign into your github account.  In the top right, click the down arrow next to your profile pic and go down to settings.
 2. On the left hand side, select developer settings.
-3. Click Personal Access Tokens and generate a new token.  Change the expiration to "No expiration". Give it all the permissions.  
-4. Copy and Paste the that token somewhere safe.  Don't lose it. 
+3. Click Personal Access Tokens and generate a new classic token.  Change the expiration to "30 Days". Give it all the permissions. 
+4. Copy and Paste the that token somewhere safe, like KeePass.  Don't lose it. 
+5. Use the "Configure SSO" dropdown to authorize it for your organization.
+
 
 Note: If you have already created a repo you would like to access, you will need to use the corresponding token to gain access to your repo not a new one. 
 
