@@ -5,7 +5,7 @@ This repository contains information to get github working with Rstudio on the N
 This works for connecting over https. I have no idea what to do if you want to connect over ssh.
 
 ## Make a personal access token
-These instructions are functional as of on Jan 11, 2022 and workson the Neptune server.
+These instructions are functional as of on Dec 08, 2025 and works on the Rstudio on container.
 
 1. Sign into your github account.  In the top right, click the down arrow next to your profile pic and go down to settings.
 2. On the left hand side, select developer settings.
@@ -51,31 +51,32 @@ git config --list
 
 The final line just shows you the settings, so you can make sure you set them properly.
 
-4.  Restart R. (Session--> Restart R). Not sure if this is strictly necessary.
+4.  Use the R function *git_credential_update()* to update your token.  Copy/Paste the token that you made.
 
-5.  Clone a private repository from github. You can do this by going to:
+5.  Restart R. (Session--> Restart R). Not sure if this is strictly necessary.
+
+5.  Trigger a "login-check". You can do this in many ways, including trying to push to a private repository. You can also try cloning a private repository from github. You can do this by going to:
     1.  File--> New Project-->Version Control-->Git.
     2.  Copy and paste in the url of a private repository, give it a directory name, and fill in the directory where it should reside, and click okay. 
     3.  At the username prompt, type in your username.
     4.  ***At the password prompt, type in your Personal Access Token from the previous section***.  This should be be saved permanently, so the next time you need to pull or push, you should not be asked for a password.
-
+    5.  The first time that you use this token, you will get a warning message that instructs you to visit a website to authorize. Do so. 
 
 
 If this doesn't work, try the following:
 
-1. Try using the R function *git_credential_update()* to update your password.
 
-2. Try adding adding 
+1. Try adding adding 
 ```
 GITHUB_PAT=<your_pat_here>
 ```
 to the end of your .Renviron file.
 
-3.  Try adding :
+2.  Try adding :
 ```
 Sys.setenv(GITHUB_PAT = "<YOUR_PAT_HERE>")
 ```
-To your .Rprofile.  One of these three will work, but we're not exactly sure which.
+To your .Rprofile.  One of these will work, but we're not exactly sure which.
 
 # Connecting to Oracle
 
